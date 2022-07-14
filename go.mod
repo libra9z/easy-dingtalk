@@ -1,4 +1,4 @@
-module github.com/kevin2027/easy-dingtalk
+module github.com/libra9z/easy-dingtalk
 
 go 1.17
 
