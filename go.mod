@@ -8,7 +8,7 @@ require (
 	github.com/alibabacloud-go/tea v1.1.17
 	github.com/alibabacloud-go/tea-utils v1.4.3
 	github.com/google/wire v0.5.0
-	github.com/kevin2027/merrors v0.0.1
+	github.com/kevin2027/merrors v0.0.2
 )
 
 require (

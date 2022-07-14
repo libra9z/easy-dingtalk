@@ -9,9 +9,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/kevin2027/easy-dingtalk/dingtalk"
-	"github.com/kevin2027/easy-dingtalk/utils"
 	"github.com/kevin2027/merrors"
+	"github.com/libra9z/easy-dingtalk/dingtalk"
+	"github.com/libra9z/easy-dingtalk/utils"
 )
 
 //go:embed .cfg/config.json

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/kevin2027/easy-dingtalk/message"
+	"github.com/libra9z/easy-dingtalk/message"
 )
 
 func TestMessageSendToConversation(t *testing.T) {

@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/alibabacloud-go/tea/tea"
-	"github.com/kevin2027/easy-dingtalk/utils"
+	"github.com/libra9z/easy-dingtalk/utils"
 )
 
 func (d *inner) CorpconversationaSyncsendV2(useridList []string, deptIdList []string, toAllUser bool, msg *MessageRequest) (taskId int, err error) {

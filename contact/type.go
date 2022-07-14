@@ -1,6 +1,6 @@
 package contact
 
-import "github.com/kevin2027/easy-dingtalk/utils"
+import "github.com/libra9z/easy-dingtalk/utils"
 
 type GetUserInfoResponse struct {
 	utils.DintalkResponse

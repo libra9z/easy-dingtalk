@@ -8,7 +8,7 @@ import (
 	dingtalkoauth2_1_0 "github.com/alibabacloud-go/dingtalk/oauth2_1_0"
 	"github.com/alibabacloud-go/tea-utils/service"
 	"github.com/alibabacloud-go/tea/tea"
-	"github.com/kevin2027/easy-dingtalk/utils"
+	"github.com/libra9z/easy-dingtalk/utils"
 )
 
 type inner struct {

@@ -2,8 +2,8 @@ package meeting
 
 import (
 	dingtalkconference_1_0 "github.com/alibabacloud-go/dingtalk/conference_1_0"
-	"github.com/kevin2027/easy-dingtalk/oauth2"
-	"github.com/kevin2027/easy-dingtalk/utils"
+	"github.com/libra9z/easy-dingtalk/oauth2"
+	"github.com/libra9z/easy-dingtalk/utils"
 )
 
 type Meeting interface {

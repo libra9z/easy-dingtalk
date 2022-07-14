@@ -7,13 +7,13 @@
 package dingtalk
 
 import (
-	"github.com/kevin2027/easy-dingtalk/calendar"
-	"github.com/kevin2027/easy-dingtalk/calendar/v2"
-	"github.com/kevin2027/easy-dingtalk/contact"
-	"github.com/kevin2027/easy-dingtalk/meeting"
-	"github.com/kevin2027/easy-dingtalk/message"
-	"github.com/kevin2027/easy-dingtalk/oauth2"
-	"github.com/kevin2027/easy-dingtalk/utils"
+	"github.com/libra9z/easy-dingtalk/calendar"
+	"github.com/libra9z/easy-dingtalk/calendar/v2"
+	"github.com/libra9z/easy-dingtalk/contact"
+	"github.com/libra9z/easy-dingtalk/meeting"
+	"github.com/libra9z/easy-dingtalk/message"
+	"github.com/libra9z/easy-dingtalk/oauth2"
+	"github.com/libra9z/easy-dingtalk/utils"
 )
 
 // Injectors from wire.go:

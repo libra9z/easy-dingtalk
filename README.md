@@ -5,15 +5,15 @@
 ## 安装
 
 ```shell
-  go get -u github.com/kevin2027/easy-dingtalk
+  go get -u github.com/libra9z/easy-dingtalk
 ```
 
 ## 引入代码
 
 ```go
 import (
-    "github.com/kevin2027/easy-dingtalk/dingtalk"
-    "github.com/kevin2027/easy-dingtalk/utils"
+    "github.com/libra9z/easy-dingtalk/dingtalk"
+    "github.com/libra9z/easy-dingtalk/utils"
 )
 ```
 

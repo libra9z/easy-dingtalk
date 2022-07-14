@@ -7,9 +7,9 @@ import (
 	dingtalkcalendar_1_0 "github.com/alibabacloud-go/dingtalk/calendar_1_0"
 	util "github.com/alibabacloud-go/tea-utils/service"
 	"github.com/alibabacloud-go/tea/tea"
-	"github.com/kevin2027/easy-dingtalk/contact"
-	"github.com/kevin2027/easy-dingtalk/oauth2"
-	"github.com/kevin2027/easy-dingtalk/utils"
+	"github.com/libra9z/easy-dingtalk/contact"
+	"github.com/libra9z/easy-dingtalk/oauth2"
+	"github.com/libra9z/easy-dingtalk/utils"
 )
 
 type Calendar interface {

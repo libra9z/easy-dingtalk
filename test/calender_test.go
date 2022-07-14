@@ -7,7 +7,7 @@ import (
 
 	util "github.com/alibabacloud-go/tea-utils/service"
 	"github.com/alibabacloud-go/tea/tea"
-	calendar_v2 "github.com/kevin2027/easy-dingtalk/calendar/v2"
+	calendar_v2 "github.com/libra9z/easy-dingtalk/calendar/v2"
 )
 
 func TestCalenderV2CreateEvent(t *testing.T) {
