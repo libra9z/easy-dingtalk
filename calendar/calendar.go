@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	dingtalkcalendar_1_0 "github.com/alibabacloud-go/dingtalk/calendar_1_0"
-	util "github.com/alibabacloud-go/tea-utils/service"
+	util "github.com/alibabacloud-go/tea-utils/v2/service"
 	"github.com/alibabacloud-go/tea/tea"
 	"github.com/libra9z/easy-dingtalk/contact"
 	"github.com/libra9z/easy-dingtalk/oauth2"
@@ -27,11 +27,12 @@ type Calendar interface {
 }
 
 func NewCalendar(oauth2 oauth2.Oauth2,
-	contact contact.Contact,
+	contact contact.Contact, notify bool,
 ) (r Calendar) {
 	return &inner{
 		oauth2:  oauth2,
 		contact: contact,
+		notify:  notify,
 	}
 }
 
@@ -39,6 +40,7 @@ type inner struct {
 	oauth2  oauth2.Oauth2
 	contact contact.Contact
 	utils.DingIdReduceStruct
+	notify bool
 }
 
 func getClient() (client *dingtalkcalendar_1_0.Client, err error) {
@@ -177,7 +179,8 @@ func (d *inner) DeleteEvent(unionId string, eventId string) (err error) {
 	}
 	headers := &dingtalkcalendar_1_0.DeleteEventHeaders{}
 	headers.XAcsDingtalkAccessToken = tea.String(accessToken)
-	_, err = client.DeleteEventWithOptions(tea.String(unionId), tea.String("primary"), tea.String(eventId), headers, &util.RuntimeOptions{})
+	request := &dingtalkcalendar_1_0.DeleteEventRequest{PushNotification: tea.Bool(d.notify)}
+	_, err = client.DeleteEventWithOptions(tea.String(unionId), tea.String("primary"), tea.String(eventId), request, headers, &util.RuntimeOptions{})
 	if err != nil {
 		err = fmt.Errorf("%w", err)
 		return

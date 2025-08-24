@@ -8,7 +8,8 @@ package dingtalk
 
 import (
 	"github.com/libra9z/easy-dingtalk/calendar"
-	"github.com/libra9z/easy-dingtalk/calendar/v2"
+	// "github.com/libra9z/easy-dingtalk/calendar/v2"
+	calendar_v2 "github.com/libra9z/easy-dingtalk/calendar/v2"
 	"github.com/libra9z/easy-dingtalk/contact"
 	"github.com/libra9z/easy-dingtalk/meeting"
 	"github.com/libra9z/easy-dingtalk/message"
@@ -22,7 +23,7 @@ func NewDingtalk(opt utils.DingtalkOptions) (Dingtalk, func(), error) {
 	oauth2Oauth2 := oauth2.NewOuath2(opt)
 	contactContact := contact.NewContact(oauth2Oauth2)
 	calendar_v2Calendar := calendar_v2.NewCalendar(oauth2Oauth2)
-	calendarCalendar := calendar.NewCalendar(oauth2Oauth2, contactContact)
+	calendarCalendar := calendar.NewCalendar(oauth2Oauth2, contactContact, false)
 	messageMessage := message.NewMessage(oauth2Oauth2)
 	meetingMeeting := meeting.NewMeeting(oauth2Oauth2)
 	dingtalk := newDingtalk(oauth2Oauth2, contactContact, calendar_v2Calendar, calendarCalendar, messageMessage, meetingMeeting)
