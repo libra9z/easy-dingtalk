@@ -1,6 +1,6 @@
 module github.com/libra9z/easy-dingtalk
 
-go 1.25.0
+go 1.23.0
 
 require (
 	github.com/alibabacloud-go/darabonba-openapi/v2 v2.0.11
